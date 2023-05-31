@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/estilos.css" />
+    <script src="qrcode.min.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>QR</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Informacion de contacto</h3>
+      <form id="form">
+        <label>Nombre</label>
+        <input type="text" id="name" />
+
+        <label>Apellido</label>
+        <input type="text" id="lastname" />
+
+        <label>Telefono</label>
+        <input type="text" id="tel" />
+
+        <label>Email: </label>
+        <input type="text" id="email" />
+
+        <div id="qrcode"></div>
+
+        <input type="submit" value="Crear QR" />
+      </form>
+    </div>
+  </body>
+</html>
